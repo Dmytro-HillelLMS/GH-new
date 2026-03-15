@@ -21,7 +21,7 @@ input {
     overflow: hidden;
     clip: rect(0 0 0 0);
 }
-.Frame {
+.frame {
     width: 18px;
     height: 18px;
     display: flex;
@@ -32,20 +32,20 @@ input {
 .up {
     margin: 40px 0;
 }
-.Login {
+.login {
     font-weight: 500;
         font-size: 20px;
         line-height: 16px;
         color: #3D3D3D;
 }
-.I {
+.or {
     font-weight: 250;
         font-size: 18px;
         line-height: 16px;
         color: #3D3D3D;
         margin: 0 8px;
 }
-.Register {
+.register {
     color: #46A358;
         font-weight: 500;
         font-size: 20px;
@@ -79,7 +79,7 @@ input {
         line-height: 16px;
         color: #3D3D3D;
 }
-p.social-box {
+.social-box {
     width: 300px;
         height: 40px;
         border-radius: 5px;
@@ -91,7 +91,7 @@ p.social-box {
         gap: 10px;
         margin-bottom: 15px
 }
-p.social-box button {
+.social-box button {
     border: none;
         background: #FFFFFF;
         display: flex;
