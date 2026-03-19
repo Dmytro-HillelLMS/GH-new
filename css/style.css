@@ -1,109 +1,70 @@
-body {
+header {
+    margin:30px 120px ;
     text-align: center;
-
+   
 }
-
-input {
-    border: 1px solid #EAEAEA;
-    width: 300px;
-    height: 40px;
-    opacity: 1;
+.logo {
+    width: 150px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 200px;
+    
+   
+       
+}
+nav {
+    display: inline-block;
+    vertical-align: middle;
+    width: 350px;
+    color: #3D3D3D;
+    
+    text-align: center;
+      
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+    margin:0 20px ;
+    font-family: Cera Pro;
+        font-weight: 400;
+        font-size: 16px;
+        
+        line-height: 100%;
+        
+}
+nav a {
+    text-decoration: none;
+    color: #3D3D3D;
+}
+.logout {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    right: 0px;
+    background-color: #46A358;
+    width: 100px;
+    height: 30px;
+    color: white;
     border-radius: 5px;
-
-
+    border: none;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 200px;
 }
-
-.lb {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
+.logout img{
+    vertical-align: middle;
+    margin-right: 5px;
 }
-.frame {
-    width: 18px;
-    height: 18px;
-    display: flex;
-    margin-left: auto;
-    margin-top: 13px;
-    margin-right: 13px;
-}
-.up {
-    margin: 40px 0;
-}
-.login {
-    font-weight: 500;
-        font-size: 20px;
-        line-height: 16px;
-        color: #3D3D3D;
-}
-.or {
-    font-weight: 250;
-        font-size: 18px;
-        line-height: 16px;
-        color: #3D3D3D;
-        margin: 0 8px;
-}
-.register {
-    color: #46A358;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 16px;
-}
-#reg {
-    font-weight: 400;
-        font-size: 13px;
-        line-height: 16px;
-        color: #3D3D3D;
-}
-.buttonreg {
-    background: #46A358;
-        color: #FFFFFF;
-        border: none;
-        width: 300px;
-        height: 45px;
-        border-radius: 5px;
+.logout a {
+    vertical-align: middle;
+    color: white;
+    text-decoration: none;
 }
 .line {
-    display: inline-block;
-        width: 97px;
-        height: 1px;
-        background: #EAEAEA;
-        vertical-align: middle;
-        margin: 45px 0;
-}
-.or-text {
-    font-weight: 400;
-        font-size: 13px;
-        line-height: 16px;
-        color: #3D3D3D;
-}
-.social-box {
-    width: 300px;
-        height: 40px;
-        border-radius: 5px;
-        border: 1px solid #EAEAEA;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        margin-bottom: 15px
-}
-.social-box button {
-    border: none;
-        background: #FFFFFF;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-}
-.bottom-line {
     width: 100%;
-        height: 10px;
-        top: 646px;
-        background: #46A358;
-        position: fixed;
-        bottom: 0;
-        left: 0;
+    border: 0.3px solid #46A35880;
+    
 }
