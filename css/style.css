@@ -6,28 +6,11 @@ header {
    
 }
 
-
-.container {
-    max-width: 1200px;
-    margin:0 auto;
-    padding:0 15px;
-    font-size: 0;
-}
 header .container{
     border-bottom: 0.3px solid #46A35880;
     
         padding-bottom: 15px;
 
-}
-.logo {
-    width: 20%;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: left;
-    
-    
-   
-       
 }
 nav {
     display: inline-block;
@@ -78,6 +61,37 @@ nav a.active::after {
 nav a:hover::after {
     width: 100%;
 }
+main {
+    margin: 30px 0;
+    font-size: 0;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 70px;
+    text-transform: uppercase;
+        
+}
+.container {
+    max-width: 1200px;
+    margin:0 auto;
+    padding:0 15px;
+    font-size: 0;
+}
+
+.logo {
+    width: 20%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    
+    
+   
+       
+}
+
 
 .logout {
     display: inline-block;
@@ -113,10 +127,7 @@ nav a:hover::after {
     transition: 0.3s;
 }
 
-main {
-    margin: 30px 0;
-    font-size: 0;
-}
+
 .intro-text {
     display: inline-block;
     vertical-align: middle;
@@ -136,15 +147,7 @@ main {
     margin-bottom: 0;
         
 }
-h1 {
-    margin: 0;
-    padding: 0;
-    font-weight: 900;
-    font-size: 70px;
-    line-height: 70px;
-    text-transform: uppercase;
-        
-}
+
 .planet {
     color: #46A358;
 }
