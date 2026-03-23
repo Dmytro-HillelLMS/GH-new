@@ -1,8 +1,91 @@
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-RegularItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-BoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-BlackItalic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-ThinItalic.woff2') format('woff2');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
 header {
     margin:30px 0 ;
     text-align: center;
     font-size: 0;
-    
+    font-family:Cera Pro ;
    
 }
 
@@ -64,6 +147,7 @@ nav a:hover::after {
 main {
     margin: 30px 0;
     font-size: 0;
+    font-family:Cera Pro ;
 }
 h1 {
     margin: 0;
@@ -79,6 +163,10 @@ h1 {
     margin:0 auto;
     padding:0 15px;
     font-size: 0;
+    
+}
+main .container{
+    background-color: #EAEAEA;
 }
 
 .logo {
@@ -86,9 +174,7 @@ h1 {
     display: inline-block;
     vertical-align: middle;
     text-align: left;
-    
-    
-   
+
        
 }
 
@@ -133,6 +219,7 @@ h1 {
     vertical-align: middle;
     width: 50%;
     font-size: 16px;
+   
     
 }
 .welcome {
@@ -197,8 +284,98 @@ h1 {
 
 }
 
+.container-shop {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+    font-size: 0;
 
+}
 
+.container-shop::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.sidebar h3{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    
+}
+
+.sidebar {
+    float: left;
+    width: 310px;
+    background-color: #EAEAEA;
+    padding: 20px;
+    box-sizing: border-box;
+    
+    
+   
+    
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sidebar li{
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+.sidebar a{
+    text-decoration: none;
+    color: #3D3D3D;
+    display: block;
+}
+.sidebar img{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+.shop {
+    float: left;
+    background-color: #EAEAEA;
+    width: 840px;
+    margin-left: 20px;
+    
+}
+.shop ul{
+    margin: 0;
+    padding: 0;
+}
+.shop li{
+    display: inline-block;
+    margin-right: 20px;
+    
+    font-weight: 400;
+    font-size: 15px;
+        
+    line-height: 16px;
+        
+}
+.shop a{
+    text-decoration: none;
+    color: #3D3D3D;
+}
+.shop p{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    
+    
+        font-weight: 400;
+        font-size: 15px;
+        
+        line-height: 16px;
+        
+}
 
 
 
