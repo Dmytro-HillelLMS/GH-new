@@ -81,11 +81,18 @@
     font-weight: 500;
     font-style: italic;
 }
+body {
+   
+    font: 400 14px/1.2 "Cera Pro", sans-serif;
+    color: #3D3D3D;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 header {
     margin:30px 0 ;
     text-align: center;
     font-size: 0;
-    font-family:Cera Pro ;
+    
    
 }
 
@@ -147,7 +154,7 @@ nav a:hover::after {
 main {
     margin: 30px 0;
     font-size: 0;
-    font-family:Cera Pro ;
+    
 }
 h1 {
     margin: 0;
@@ -252,8 +259,8 @@ main .container{
     display: inline-block;
     vertical-align: middle;
     text-align: center;
-    width: 100px;
-    height: 25px;
+    width: auto;
+    height: auto;
     background-color: #46A358;
     color: #FFFFFF;
     font-weight: 700;
@@ -283,12 +290,18 @@ main .container{
     max-width: 100%;
 
 }
-
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 .container-shop {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 15px;
-    font-size: 0;
+    
 
 }
 
@@ -343,6 +356,14 @@ main .container{
     margin-top: 20px;
     box-sizing: border-box;
 }
+.sidebar a.sidebar-active{
+    color: #46A358;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.sidebar a.sidebar-activ:hover {
+    color: #3d8f47;
+}
 .shop {
     float: left;
     background-color: #EAEAEA;
@@ -350,12 +371,23 @@ main .container{
     margin-left: 20px;
     
 }
-.shop ul{
+.shop-filter {
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 0;
+    
+}
+.shop-filter::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.shop-filter ul{
     float: left;
     margin: 0;
     padding: 0;
 }
-.shop li{
+.shop-filter li{
     display: inline-block;
     margin-right: 20px;
     
@@ -365,13 +397,13 @@ main .container{
     line-height: 16px;
         
 }
-.shop a{
+.shop-filter a{
     position: relative;
     text-decoration: none;
     color: #3D3D3D;
     transition: 0.3s;
 }
-.shop p{
+.shop-filter p{
     float: right;
     text-align: center;
     vertical-align: middle;
@@ -388,18 +420,27 @@ main .container{
 }
 .catalog {
    font-size: 0;
+   padding: 0;
+   text-align: left;
         
 }
 .card{
-    display: inline-block;
+    display: block;
     width: 30%;
     vertical-align: top;
     font-size: 16px;
     margin-right: 5%;
+    margin-left: 0;
+    text-align: left;
+    
+    
 }
 .card img{
-    width: 100%;
+    width: 250px;
     display: block;
+    float: left;
+    height: auto;
+    
 
 }
 .card h4{
@@ -440,6 +481,11 @@ main .container{
 .shop::after {
     content: '';
     display: block;
+    clear: both;
+}
+.card::after {
+    content: "";
+    display: table;
     clear: both;
 }
 
