@@ -206,7 +206,7 @@ main {
     margin:0 auto;
     padding:0 15px;
     font-size: 0;
-    background-color: #EAEAEA;
+    
 }
 .intro-text {
     display: inline-block;
@@ -300,7 +300,7 @@ h1 {
     float: left;
     width: 310px;
     background-color: #EAEAEA;
-    padding: 20px;
+    padding: 0;
     box-sizing: border-box;
     
 }
@@ -308,7 +308,7 @@ h1 {
     font-weight: 700;
     font-size: 18px;
     line-height: 16px;
-    
+    margin-top: 0;
 }
 .sidebar ul {
     list-style: none;
@@ -353,10 +353,10 @@ h1 {
     
 }
 .shop-filter {
-    width: 100%;
+    
     margin-bottom: 30px;
-    font-size: 0;
-    background-color: #EAEAEA;
+    
+    
 }
 .shop-filter::after {
     content: '';
@@ -386,9 +386,7 @@ h1 {
 }
 .shop-filter p{
     float: right;
-    text-align: center;
-    vertical-align: middle;
-    font-weight: 400;
+    
     font-size: 15px;
     line-height: 16px;
     margin: 0;
