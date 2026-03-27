@@ -211,7 +211,7 @@ main {
     max-width: 1200px;
     margin:0 auto;
     padding:0 15px;
-    background-color: #EAEAEA;
+    
     display: flex;
     align-items: center;
 }
@@ -310,6 +310,7 @@ h1 {
     
 }
 .sidebar h3{
+    margin: 0 0 15px 0;
     font-weight: 700;
     font-size: 18px;
     line-height: 16px;
@@ -359,10 +360,10 @@ h1 {
     
 }
 .shop-filter {
-    width: 100%;
+    
     margin-bottom: 30px;
     display: flex;
-    background-color: #EAEAEA;
+    
     align-items: center;
     justify-content: space-between;
 }
@@ -390,9 +391,9 @@ h1 {
 }
 .shop-filter p{
     align-items: center;
-    justify-content: right;
+    
     display: flex;
-    font-weight: 400;
+    
     font-size: 15px;
     line-height: 16px;
     margin: 0;
