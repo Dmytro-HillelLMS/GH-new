@@ -303,7 +303,7 @@ h1 {
 
 .sidebar {
     display: block;
-    width: 310px;
+    margin-bottom: 50px;
     background-color: #EAEAEA;
     padding: 10px 15px;
     box-sizing: border-box;
@@ -434,7 +434,7 @@ h1 {
 }
 .card{
     display: flex;
-    flex: 0 1 calc(33.333% - 20px);
+    flex: 1; 
     flex-direction: column;
     font-size: 16px;
     
@@ -444,10 +444,10 @@ h1 {
     
 }
 .card img{
-    width: 250px;
+    
     display: block;
     
-    height: auto;
+   
     background-color: #EAEAEA;
 
 }
@@ -472,7 +472,7 @@ h1 {
     
     gap: 10px;
     
-    margin-top: 500px;
+    margin-top: 20px;
     
 }
 
@@ -522,34 +522,37 @@ h1 {
 .container-blog{
     max-width: 1200px;
         margin: 20px auto;
-        padding: 0;
+        
         display: flex;
         flex-wrap: wrap;
         gap: 40px;
 }
-.recomend-1, .recomend-2 {
-    width: 580px;
-        height: 300px;
+.recomend {
+    width: 48.3%;
+        
         display: flex;
         background-color: #EAEAEA;
-        overflow: hidden;
+        margin-top: 50px
+        
         
        
 }
-.recomend-1 > img{
+.recomend > img{
     display: block;
     width: 280px;
     height: auto;
+    margin-top: -50px;
+    
 }
-.rec1, .rec2{
+.rec{
     flex: 1;
     justify-content: center;
     align-items: flex-end;
     text-align: right;
     display: flex;
-    width: 100%;
+    
     flex-direction: column;
-    margin: 0;
+    
     padding-left: 10px;
     padding-right: 30px;
     
@@ -558,7 +561,7 @@ h1 {
 }
 
 
-.rec1 h3, .rec2 h3{
+.rec h3 {
     color: #3D3D3D;
     
     
@@ -566,19 +569,19 @@ h1 {
         font-size: 18px;
         
         line-height: 24px;
+        padding-left: 40px;
         
-        text-align: right;
         text-transform: uppercase;
 }
-.rec1 p, .rec2 p{
-        font-size: 14px;
+.rec p{
+        
         line-height: 24px;
-        text-align: right;
+        
         color: #727272;
         padding-bottom: 15px;
         padding-top: 10px
 }
-.rec1 a, .rec2 a{
+.rec a{
     align-items: center;
     display:flex ;
     width: 140px;
@@ -587,7 +590,7 @@ h1 {
     
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
+    
     line-height: 20px;
     color: #FFFFFF;
     background-color: #46A358;
@@ -595,11 +598,11 @@ h1 {
     transition: 0.3s;
         
 }
-.rec1 a:hover, .rec2 a:hover{
+.rec a:hover {
     transform: scale(1.1);
         background-color: #3d8f47;
 }
-.rec1 img, .rec2 img{
+.rec img {
     display: block;
     width: 14px;
     height: 14px;
@@ -607,17 +610,10 @@ h1 {
 }
 
 
-.recomend-2 > img {
-    display: block;
-    width: 280px;
-    height: auto;
-}
-
-
 .blog-posts{
-    display: block;
+    
     margin-top: 130px;
-    width: 100%;
+    
     
 }
 .posts-text{
@@ -627,54 +623,51 @@ h1 {
 }
 .posts-text h2{
     color: #3D3D3D;
-    font-weight: 700;
     font-size: 30px;
-    line-height: 16px;
-    text-align: center;
+    line-height: 30px;
     margin-bottom: 10px;
 }
 .posts-text p{
     color: #727272;
-    font-size: 14px;
+    
     line-height: 24px;
-    text-align: center;
+    
     margin-bottom: 20px;
 }
 .posts{
-    height: auto;
+    
     display: flex;
     gap: 40px;
     
 }
-.post1, .post2, .post3, .post4{
+.post{
+    
     background-color: #EAEAEA;
     flex-direction: column;
-    height: 360px;
+    
 
 }
 .post-text{
-    margin: 0;
-    display: block;
-    text-align: left;
+    
     padding: 5px 5px;
 }
-.post-text p:first-of-type{
+.post-text time{
     margin-top: 10px;
     color: #46A358;
     font-weight: 500;
-    font-size: 14px;   
-    line-height: 16px;
+}      
+    
         
-}
+
 .post-text h3{
     margin-top: 10px;
     color: #3D3D3D;
-    font-weight: 700;
+    
     font-size: 20px;
     line-height: 26px;
         
 }
-.post-text p:nth-child(2){
+.post-text p{
     display: block;
     margin-top: 10px;
     align-items: center;
@@ -682,20 +675,20 @@ h1 {
     justify-content: center;
     display: flex;
     color: #727272;
-        font-weight: 400;
-        font-size: 14px;
+        
+        
         line-height: 22px;
         
 }
 .post-text a{
-    display: block;
+    
     
     margin-top: 10px;
     text-decoration: none;
     color: #3D3D3D;
     font-weight: 500;
-    font-size: 14px;    
-    line-height: 16px;
+        
+   
     transition: 0.3s;
 
 }
@@ -707,8 +700,8 @@ h1 {
     text-decoration: none;
         color: #46A358;
         font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
+        
+        
 }
 .post-text img{
     
@@ -716,6 +709,10 @@ h1 {
     width: 14px;
     height: 14px;
 }
+
+
+
+
 
 
 .registration{
