@@ -426,21 +426,77 @@ h1 {
         
 }
 .card{
+   
     
-    flex: 1; 
-    
+    width: 260px;
+    position: relative;
+    transition: border 0.3s ease;
     font-size: 16px;
+    border-top: 2px solid transparent;
     
     
     
+}
+.card:hover{
+    border-top: 2px solid #46A358;
     
+}
+.img-box{
+    position: relative;
+    background-color:#EAEAEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-box img {
+    margin-top: -15px;
+    
+    max-width: 100%;
+}
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color: #46A358;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.card-icons{
+    position: absolute;
+    display: flex;
+    bottom: 10px;
+    gap: 15px;
+    transition: 0.3s;
+    opacity: 0;
+    z-index: 5;
+}
+.card:hover .card-icons{
+    opacity: 1;
+}
+.card-icons a{
+    background-color: #fff;
+    display: flex;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width: 35px;
+    height: 35px;
+    
+}
+.card-icons a:hover {
+    background-color: #f0f0f0;
+}
+.card-icons a img{
+    margin: 0;
 }
 .card img{
     
     display: block;
     
    
-    background-color: #EAEAEA;
+    
 
 }
 .card h4{
