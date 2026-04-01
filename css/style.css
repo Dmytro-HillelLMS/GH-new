@@ -586,6 +586,7 @@ h1 {
     margin-left: 8px;
 }
 .text-link {
+    
     color: #46A358;
     text-decoration: none;
     font-weight: 600;
@@ -673,7 +674,10 @@ h1 {
     line-height: 24px;
     
     margin-bottom: 20px;
+
 }
+
+
 .posts{
     
     display: flex;
