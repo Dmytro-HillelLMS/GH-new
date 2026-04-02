@@ -725,7 +725,7 @@ h1 {
         
 }
 
-.post-text a{
+.readmore{
     display: inline-flex;
     align-items: center;
     margin-top: 10px;
@@ -737,10 +737,10 @@ h1 {
     transition: 0.3s;
 
 }
-.post-text a:hover{
+.readmore:hover{
     color: #46A358;
 }
-.post-text a:hover img {
+.readmore:hover img {
     transform: translateX(4px);
     
     filter: brightness(0) saturate(100%) invert(32%) sepia(85%) saturate(394%) hue-rotate(94deg) brightness(97%) contrast(92%);
