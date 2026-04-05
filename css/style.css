@@ -136,7 +136,7 @@ nav li {
     position: relative;
     list-style: none;
     margin:0 20px ;
-    font-weight: 400;
+    
     font-size: 16px;
     line-height: 100%;
        
@@ -160,7 +160,7 @@ nav a.active::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -5px;
 
     width: 100%;
     height: 2px;
@@ -176,6 +176,24 @@ nav>ul>li>a::after {
     background-color: #46A358;
     transition: 0.3s;
 }
+nav>ul>li>a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #46A358;
+    
+}
+nav>ul>li:hover>a {
+    color: #46A358;
+    font-weight: 700;
+}
+
+nav>ul>li:hover>a::after {
+    width: 100%;
+}
 
 nav>ul>li>a:hover::after,
 nav>ul>li>a.active::after {
@@ -184,9 +202,10 @@ nav>ul>li>a.active::after {
 
 .list {
     position: absolute;
-    top: 100%;
-    left: 0;
-    padding: 0;
+    top: 100%  ;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 30px;
     display: none;
     z-index: 100;
     min-width: 180px;
@@ -200,7 +219,7 @@ nav>ul>li>a.active::after {
     background-color: #EDF6EE;
     
    
-    position: relative;
+    
 }
 .list a{
     width: 100%;
@@ -213,6 +232,11 @@ nav>ul>li>a.active::after {
     background-color: #46A358;
     color: #EAEAEA;
 }
+.list li:hover>a {
+    background-color: #46A358;
+    color: #EAEAEA;
+}
+
 .list li.submenu>a {
     padding-right: 25px;
 }
@@ -223,10 +247,17 @@ nav>ul>li>a.active::after {
     right: 10px;
     top: 50%;
     color: #3D3D3D;
-    transform: translateY(-50%);
+    transform: translateY(-50%) ;
     font-size: 16px;
     font-weight: 700;
     line-height: 1;
+}
+.list li.submenu:hover>a::after {
+    
+    
+    color:#FFFFFF;
+    transform: translateY(-50%) rotate(-180deg);
+    
 }
 .submenu:hover>a::after {
     color: #ffffff;
@@ -239,13 +270,13 @@ nav li:hover > .list {
 }
 .list2{
     position: absolute;
-    top: -109px;
+    top: -300%;
     left: 100%;
     display: none;
-    padding: 0;
-    margin: 0;
     min-width: 180px;
     z-index: 101;
+    padding-left: 2px;
+    
 
 
 }
