@@ -944,15 +944,17 @@ h1 {
         margin: 20px auto;
         padding: 0;
         display: flex;
+        flex-direction: column;
 }
 .up-footer{
-    max-width: 1200px;
+    
     display: flex;
     justify-content: space-between;
     background-color: #EAEAEA;
     padding: 0;
     margin: 0;
     align-items: center;
+    color: #3D3D3D;
 }
 .info{
     display: block;
@@ -975,7 +977,7 @@ h1 {
 .join{
     display: block;
     margin: 30px;
-    
+    color: #3D3D3D;
     
     text-align: left;
     width: 80%;
@@ -986,7 +988,82 @@ h1 {
 .join > p{
     padding: 15px 0;
 }
-
+.main-footer{
+    display: flex;
+        justify-content: space-between;
+        
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        color: #3D3D3D;
+        background: linear-gradient(to right, #EDF6EF, #52C368 80% );
+        
+}
+.main-footer > img{
+    display: block;
+    text-align: left;
+    margin: 20px;
+    
+}
+.inform{
+    display: flex;
+    margin: 20px;
+    
+}
+.inform img{
+    width: 20px;
+    height: 20px;
+}
+.bottom-footer{
+    display: flex;
+    
+        background-color: #EAEAEA;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        
+        border-bottom: 0.3px solid #3D3D3D;
+        
+}
+.menu{
+   width: 100%;
+    display:flex;
+    justify-content: space-between;
+   
+}
+.guid{
+    color: #3D3D3D;
+    flex: 1;
+    margin: 20px;
+    
+}
+.guid ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.guid li{
+    padding: 5px 0;
+}
+.guid li:hover{
+    color: #3d8f47;
+}
+.social-pay{
+    flex: 1.5;
+    margin: 20px;
+}
+.social, .pay{
+    padding-bottom: 20px;
+}
+.social h3, .pay h3{
+    padding-bottom: 15px;
+}
+.end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
 
 
