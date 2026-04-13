@@ -81,6 +81,157 @@
     font-weight: 500;
     font-style: italic;
 }
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icons/icomoon.eot?xvgnli');
+    src: url('../fonts/icons/icomoon.eot?xvgnli#iefix') format('embedded-opentype'),
+        url('../fonts/icons/icomoon.ttf?xvgnli') format('truetype'),
+        url('../fonts/icons/icomoon.woff?xvgnli') format('woff'),
+        url('../fonts/icons/icomoon.svg?xvgnli#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-shopping-1-svg:before {
+    content: "\e900";
+}
+
+.icon-Logout-svg:before {
+    content: "\e901";
+}
+
+.icon-Icon-svg:before {
+    content: "\e902";
+}
+
+.icon-Icon-3-svg:before {
+    content: "\e903";
+}
+
+.icon-Icon-2-svg:before {
+    content: "\e904";
+}
+
+.icon-heart-1-svg:before {
+    content: "\e905";
+}
+
+.icon-google-1-svg .path1:before {
+    content: "\e906";
+    color: rgb(89, 195, 106);
+}
+
+.icon-google-1-svg .path2:before {
+    content: "\e907";
+    margin-left: -1em;
+    color: rgb(0, 166, 108);
+}
+
+.icon-google-1-svg .path3:before {
+    content: "\e908";
+    margin-left: -1em;
+    color: rgb(255, 218, 45);
+}
+
+.icon-google-1-svg .path4:before {
+    content: "\e909";
+    margin-left: -1em;
+    color: rgb(64, 134, 244);
+}
+
+.icon-google-1-svg .path5:before {
+    content: "\e90a";
+    margin-left: -1em;
+    color: rgb(65, 117, 223);
+}
+
+.icon-google-1-svg .path6:before {
+    content: "\e90b";
+    margin-left: -1em;
+    color: rgb(255, 100, 26);
+}
+
+.icon-google-1-svg .path7:before {
+    content: "\e90c";
+    margin-left: -1em;
+    color: rgb(240, 56, 0);
+}
+
+.icon-Frame-svg:before {
+    content: "\e90d";
+}
+
+.icon-facebook-1-svg:before {
+    content: "\e90e";
+    color: #3b5999;
+}
+
+.icon-Arrow-Right-svg:before {
+    content: "\e90f";
+}
+
+.icon-Arrow-Down-2-svg:before {
+    content: "\e910";
+}
+
+.icon-phone:before {
+    content: "\e942";
+}
+
+.icon-envelop:before {
+    content: "\e945";
+}
+
+.icon-location:before {
+    content: "\e947";
+}
+
+.icon-search:before {
+    content: "\e986";
+}
+
+.icon-arrow-right2:before {
+    content: "\ea3c";
+}
+
+.icon-ctrl:before {
+    content: "\ea50";
+}
+
+.icon-facebook-svg:before {
+    content: "\ea90";
+}
+
+.icon-instagram-svg:before {
+    content: "\ea92";
+}
+
+.icon-twitter-svg:before {
+    content: "\ea96";
+}
+
+.icon-youtube-svg:before {
+    content: "\ea9d";
+}
+
+.icon-linkedin2-svg:before {
+    content: "\eaca";
+}
 *,
 *::before,
 *::after {
@@ -620,8 +771,13 @@ h1 {
 .card-icons a:hover {
     background-color: #f0f0f0;
 }
-.card-icons a img{
-    margin: 0;
+.card-icons i{
+    color: #3D3D3D;
+        font-size: 20px;
+        display: block;
+}
+.card-icons i:hover {
+    color: #46A358;
 }
 .card img{
     
@@ -831,11 +987,11 @@ h1 {
         padding-top: 10px
 }
 
-.rec img {
-    display: block;
-    width: 14px;
-    height: 14px;
-    margin-left: 5px;
+.rec i{
+   
+        font-size: 16px;
+        display: block;
+        margin-left: 10px;
 }
 
 
@@ -869,24 +1025,31 @@ h1 {
 .posts{
     
     display: flex;
-    gap: 40px;
+    gap: 30px;
+    width: 100%;
+    
     
 }
 .post{
     display: flex;
     background-color: #EAEAEA;
     flex-direction: column;
+    width: calc(25% - 22.5px);
+    box-sizing: border-box;
     
 
 }
 .post-text{
-    
-    padding: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 15px;
+    flex-grow: 1;
 }
 .post-text time{
     margin-top: 10px;
     color: #46A358;
     font-weight: 500;
+    
 }      
     
         
@@ -902,10 +1065,8 @@ h1 {
 .post-text p{
     display: block;
     margin-top: 10px;
-    align-items: center;
+    text-align: left;
     
-    justify-content: center;
-    display: flex;
     color: #727272;
         
         
@@ -917,28 +1078,30 @@ h1 {
     display: inline-flex;
     align-items: center;
     margin-top: 10px;
+    gap: 10px;
     text-decoration: none;
     color: #3D3D3D;
     font-weight: 500;
         
    
-    transition: 0.3s;
+    transition: transform 0.3s ease, fill 0.3s ease;
 
 }
 .readmore:hover{
     color: #46A358;
 }
-.readmore:hover img {
-    transform: translateX(4px);
-    
-    filter: brightness(0) saturate(100%) invert(32%) sepia(85%) saturate(394%) hue-rotate(94deg) brightness(97%) contrast(92%);
-}
-.post-text img{
-    
+.readmore i{
     color: #3D3D3D;
-    width: 14px;
-    height: 14px;
+    font-size: 20px;
+    display: block;
+    
+    
 }
+.readmore:hover i {
+    color: #46A358;
+    transform: translateX(5px);
+}
+
 .container-footer{
     max-width: 1200px;
         margin: 20px auto;
@@ -1059,11 +1222,20 @@ h1 {
 .inform{
     display: flex;
     margin: 20px;
+    align-items: center;
+    gap: 10px;
     
 }
-.inform img{
-    width: 20px;
-    height: 20px;
+.inform i{
+    color: #3D3D3D;
+    font-size: 20px;
+    display: block;
+    
+    transition: fill 0.3s ease;
+
+}
+.inform i:hover{
+    color: #46A358;
 }
 .bottom-footer{
     display: flex;
@@ -1106,6 +1278,40 @@ h1 {
 }
 .guid li:hover{
     color: #3d8f47;
+}
+.social{
+    display: block;
+   
+    
+}
+.social ul{
+    display: flex;
+    gap: 10px;
+}
+
+.social li{
+   
+    list-style: none;
+    
+    
+}
+.social a{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: #3D3D3D;
+    transition: fill 0.3s ease;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #3D3D3D;
+    border-radius: 4px;
+    
+}
+.social a:hover {
+    color: #46A358;
+    border-color: #46A358;
 }
 .social-pay{
     flex: 1.5;
