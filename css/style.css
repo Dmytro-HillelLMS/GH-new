@@ -766,15 +766,19 @@ h1 {
     padding: 8px;
     width: 35px;
     height: 35px;
-    
+    text-decoration: none;
+        
+        
 }
 .card-icons a:hover {
+    
     background-color: #f0f0f0;
 }
 .card-icons i{
     color: #3D3D3D;
         font-size: 20px;
         display: block;
+        
 }
 .card-icons i:hover {
     color: #46A358;
@@ -1097,6 +1101,12 @@ h1 {
     
     
 }
+.special{
+    color: #46A358;
+}
+.special i {
+    color: #46A358;
+}
 .readmore:hover i {
     color: #46A358;
     transform: translateX(5px);
@@ -1227,16 +1237,14 @@ h1 {
     
 }
 .inform i{
-    color: #3D3D3D;
+    color: #46A358;
     font-size: 20px;
     display: block;
     
     transition: fill 0.3s ease;
 
 }
-.inform i:hover{
-    color: #46A358;
-}
+
 .bottom-footer{
     display: flex;
     
