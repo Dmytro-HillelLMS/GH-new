@@ -951,50 +951,65 @@ h1 {
     background-color: #EAEAEA;
     
     
-    align-items: center;
+    align-items: stretch;
     color: #3D3D3D;
 }
 .info {
     flex: 1;
     margin: 30px;
-    padding-top: 100px;
+    
     color: #3D3D3D;
     text-align: left;    
-    background-repeat: no-repeat;  
-    background-position: 30px 10px, 0px 20px;
-    background-size: 77px 95px, 80px 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
-
-
-.info-1 {
+.icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px; 
+    height: 70px;
+    background-color: rgba(70, 163, 88, 0.1);
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 20px;
     
-    background-image:
-        url('../image/Picture1.png'),
-        radial-gradient(circle at center, rgba(70, 163, 88, 0.1) 0%, rgba(70, 163, 88, 0.1) 70%, transparent 71%);
 }
-
-.info-2 {
-    background-image:
-        url('../image/Picture2.png'),
-        radial-gradient(circle at center, rgba(70, 163, 88, 0.1) 0%, rgba(70, 163, 88, 0.1) 70%, transparent 71%);
+.icon-circle img {
+    
+    height: auto;
+    display: block;
+    position: relative;
+    left: 10px;
+    bottom: 20px;
+    
 }
+.icon-circle .back {
 
-.info-3 {
-    background-image:
-        url('../image/Picture3.png'),
-        radial-gradient(circle at center, rgba(70, 163, 88, 0.1) 0%, rgba(70, 163, 88, 0.1) 70%, transparent 71%);
+    height: auto;
+    display: block;
+    position: relative;
+    left: 10px;
+    bottom: 7px;
+
 }
-
 
 
 .info:first-child {
     margin-left: 15px;
 }
-.vertical-line{
-    width: 2px;
-    height: 150px;
-    background-color: #46A3581A;
-    display: flex;
+.info:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    
+    top: 25px;
+    bottom: 25px;
+    width: 1px;
+    background-color: rgba(70, 163, 88, 0.1);
+    
 }
 .info img{
     display: block;
@@ -1031,7 +1046,13 @@ h1 {
     margin: 0;
     
 }
-
+.joined{
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+}
 .join input {
     
     
@@ -1060,6 +1081,14 @@ h1 {
     display: flex;
     margin: 20px;
     
+    
+}
+address{
+    font-style: normal;
+}
+.inform a{
+    text-decoration: none;
+    color: #3D3D3D;
 }
 .inform img{
     width: 20px;
