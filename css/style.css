@@ -83,11 +83,11 @@
 }
 @font-face {
     font-family: 'icomoon';
-    src: url('../fonts/icons/icomoon.eot?xvgnli');
-    src: url('../fonts/icons/icomoon.eot?xvgnli#iefix') format('embedded-opentype'),
-        url('../fonts/icons/icomoon.ttf?xvgnli') format('truetype'),
-        url('../fonts/icons/icomoon.woff?xvgnli') format('woff'),
-        url('../fonts/icons/icomoon.svg?xvgnli#icomoon') format('svg');
+    src: url('../fonts/icons/icomoon.eot?9m0ql7');
+    src: url('../fonts/icons/icomoon.eot?9m0ql7#iefix') format('embedded-opentype'),
+        url('../fonts/icons/icomoon.ttf?9m0ql7') format('truetype'),
+        url('../fonts/icons/icomoon.woff?9m0ql7') format('woff'),
+        url('../fonts/icons/icomoon.svg?9m0ql7#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -107,86 +107,24 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.icon-shopping-1-svg:before {
-    content: "\e900";
-}
-
-.icon-Logout-svg:before {
-    content: "\e901";
-}
-
-.icon-Icon-svg:before {
-    content: "\e902";
-}
-
-.icon-Icon-3-svg:before {
+.icon-keyboard_arrow_right:before {
     content: "\e903";
 }
 
-.icon-Icon-2-svg:before {
+.icon-logout:before {
     content: "\e904";
+}
+
+.icon-shopping-1-svg:before {
+    content: "\e900";
 }
 
 .icon-heart-1-svg:before {
     content: "\e905";
 }
 
-.icon-google-1-svg .path1:before {
-    content: "\e906";
-    color: rgb(89, 195, 106);
-}
-
-.icon-google-1-svg .path2:before {
-    content: "\e907";
-    margin-left: -1em;
-    color: rgb(0, 166, 108);
-}
-
-.icon-google-1-svg .path3:before {
-    content: "\e908";
-    margin-left: -1em;
-    color: rgb(255, 218, 45);
-}
-
-.icon-google-1-svg .path4:before {
-    content: "\e909";
-    margin-left: -1em;
-    color: rgb(64, 134, 244);
-}
-
-.icon-google-1-svg .path5:before {
-    content: "\e90a";
-    margin-left: -1em;
-    color: rgb(65, 117, 223);
-}
-
-.icon-google-1-svg .path6:before {
-    content: "\e90b";
-    margin-left: -1em;
-    color: rgb(255, 100, 26);
-}
-
-.icon-google-1-svg .path7:before {
-    content: "\e90c";
-    margin-left: -1em;
-    color: rgb(240, 56, 0);
-}
-
 .icon-Frame-svg:before {
     content: "\e90d";
-}
-
-.icon-facebook-1-svg:before {
-    content: "\e90e";
-    color: #3b5999;
-}
-
-.icon-Arrow-Right-svg:before {
-    content: "\e90f";
-}
-
-.icon-Arrow-Down-2-svg:before {
-    content: "\e910";
 }
 
 .icon-phone:before {
@@ -491,6 +429,11 @@ nav li:hover > .list {
     border-radius: 5px;
     transition: 0.3s;
 }
+.logout i{
+    margin-right: 5px;
+    font-size: 20px;
+    display: block;
+}
 main .container {
     background-color: #EAEAEA;
       
@@ -780,9 +723,11 @@ h1 {
         display: block;
         
 }
-.card-icons i:hover {
+
+.card-icons a:hover i{
     color: #46A358;
 }
+
 .card img{
     
     display: block;
@@ -1308,19 +1253,16 @@ h1 {
     justify-content: center;
     display: flex;
     text-decoration: none;
-    color: #3D3D3D;
+    color: #46A358;
     transition: fill 0.3s ease;
     vertical-align: middle;
     width: 30px;
     height: 30px;
-    border: 2px solid #3D3D3D;
+    border: 1px solid #46A358;
     border-radius: 4px;
     
 }
-.social a:hover {
-    color: #46A358;
-    border-color: #46A358;
-}
+
 .social-pay{
     flex: 1.5;
     margin: 20px;
