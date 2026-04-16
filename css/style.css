@@ -950,14 +950,14 @@ h1 {
     justify-content: space-between;
     background-color: #EAEAEA;
     
-    
+    padding: 20px 20px;
     align-items: stretch;
     color: #3D3D3D;
 }
 .info {
     flex: 1;
-    margin: 30px;
     
+    padding: 0 20px;
     color: #3D3D3D;
     text-align: left;    
     position: relative;
@@ -998,24 +998,40 @@ h1 {
 
 
 .info:first-child {
-    margin-left: 15px;
+    padding-left: 15px;
 }
 .info:not(:last-child)::after {
     content: "";
     position: absolute;
     right: 0;
     
-    top: 25px;
-    bottom: 25px;
+    top: 20px;
+    bottom: 20px;
     width: 1px;
     background-color: rgba(70, 163, 88, 0.1);
     
+}
+
+.info::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 20px;
+    bottom: 20px;
+    width: 1px;
+    background-color: rgba(70, 163, 88, 0.1);
+}
+
+
+.info:nth-of-type(3)::after {
+    display: none;
 }
 .info img{
     display: block;
 }
 .info h3{
-    padding: 15px 0;
+    padding: 0;
+    margin: 15px 0 10px 0;
 }
 .join{
     flex: 1.5;
@@ -1053,6 +1069,7 @@ h1 {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
     border-radius: 6px;
 }
+
 .join input {
     
     
@@ -1083,12 +1100,17 @@ h1 {
     
     
 }
+
 address{
     font-style: normal;
 }
 .inform a{
     text-decoration: none;
     color: #3D3D3D;
+    transition: 0.3s;
+}
+.inform a:hover{
+    color: #46A358;
 }
 .inform img{
     width: 20px;
