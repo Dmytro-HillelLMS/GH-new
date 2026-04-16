@@ -328,29 +328,29 @@ nav>ul>li>a.active::after {
 
 .list li.submenu>a {
     padding-right: 25px;
+    position: relative;
+    
 }
 
 .list li.submenu>a::after {
-    content: ">";
+    content: "";
     position: absolute;
     right: 10px;
     top: 50%;
-    color: #3D3D3D;
-    transform: translateY(-50%) ;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #3D3D3D;
+    border-right: 2px solid #3D3D3D;
+    transform: translateY(-50%) rotate(45deg);
+    transition: all 0.3s ease;
 }
+
 .list li.submenu:hover>a::after {
+    border-color: #FFFFFF;
     
-    
-    color:#FFFFFF;
-    transform: translateY(-50%) rotate(-180deg);
-    
+    transform: translateY(-70%) rotate(225deg);
 }
-.submenu:hover>a::after {
-    color: #ffffff;
-}
+
 nav li:hover > .list {
     display: block;
 }
@@ -1260,7 +1260,13 @@ h1 {
     height: 30px;
     border: 1px solid #46A358;
     border-radius: 4px;
+    transition:all 0.3s ease;
     
+}
+.social a:hover{
+    transform: translateY(-5px);
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
+
 }
 
 .social-pay{
