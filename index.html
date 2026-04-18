@@ -537,6 +537,12 @@
                         <input id="el" placeholder="  Enter your email address" type="email">
                         <a href="" class="btn">Join</a>
                     </p>
+                    <label class="custom-checkbox">
+                        <input class="checking" type="checkbox" name="check">
+                        <div class="custom-check-icon"></div>
+                        Consent to save data
+                    </label>
+
                     <p>
                         We usually post offers and challenges in newsletter. We’re your online houseplant destination. We offer a wide range of
                         houseplants and accessories shipped directly from our (green)house to yours!
@@ -704,5 +710,30 @@
         </p>
     </footer>
     
+    <div class="preloader">
+        <div class="plant-container">
+            <div class="leaf left"></div>
+            <div class="leaf right"></div>
+            <div class="stem"></div>
+            <div class="pot"></div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', function () {
+            
+            const loader = document.querySelector('.preloader');
+
+            
+            setTimeout(() => {
+                loader.style.opacity = '0'; 
+
+                
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 500);
+            }, 5500); 
+        });
+    </script>
+
 </body>
 </html>

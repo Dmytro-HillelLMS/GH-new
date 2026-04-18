@@ -1219,6 +1219,47 @@ h1 {
     border-right: none;
            
 }
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+   
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.custom-check-icon {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #50514f;
+    margin-right: 8px;
+}
+
+.custom-check-icon::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #46A358;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.checking{
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    display: none;
+}
+.custom-check-icon::before {
+     display: none;
+}
+
+.custom-checkbox input:checked~.custom-check-icon::before {
+    display: block;
+}
 .main-footer{
     display: flex;
         justify-content: space-between;
@@ -1303,7 +1344,7 @@ address{
     text-decoration: none;
     color: #3D3D3D;
 }
-.guid li:hover{
+.guid a:hover{
     color: #46A358;
 }
 .social{
@@ -1339,7 +1380,7 @@ address{
 }
 .social a:hover{
     transform: translateY(-5px);
-    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 5px 10px rgba(10, 10, 10, 0.2));
 
 }
 
@@ -1484,3 +1525,103 @@ input {
     bottom: 0;
     left: 0;
 }
+@keyframes grow-stem {
+    0% {
+        transform: scaleY(0);
+    }
+
+    50%,
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes grow-leaves {
+
+    0%,
+    20% {
+        transform: scale(0) ;
+        opacity: 0;
+    }
+
+    50%,
+    75%,
+    100% {
+        transform: scale(1) ;
+        opacity: 1;
+    }
+}
+
+
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.6s ease;
+}
+
+.plant-container {
+    position: relative;
+    width: 60px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.stem {
+    width: 4px;
+    height: 60px;
+    background-color: #46A358;
+    border-radius: 2px;
+    transform-origin: bottom;
+    animation: grow-stem 6s forwards  infinite ease-in-out;
+}
+
+
+.leaf {
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    background-color: #46A358;
+    border-radius: 20px 0;
+    
+    opacity: 0;
+    animation-delay: 3s;
+}
+
+.leaf.left {
+    bottom: 40px;
+    left: 10px;
+    transform: rotate(-45deg);
+    animation: grow-leaves 5.5s  infinite ease-in-out 1s;
+}
+
+.leaf.right {
+    bottom: 50px;
+    right: 10px;
+    border-radius: 0 20px;
+    transform: rotate(45deg);
+    animation: grow-leaves 5.2s infinite ease-in-out 1.5s;
+}
+
+
+.pot {
+    width: 40px;
+    height: 20px;
+    background-color: #bc6c25;
+    border-radius: 0 0 10px 10px;
+    z-index: 2;
+}
+
+
