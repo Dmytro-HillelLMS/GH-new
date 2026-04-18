@@ -795,11 +795,34 @@ h1 {
         background-color: #46A358;
         border-radius: 4px;
         transition: 0.3s;
+        position: relative;
 }
 
 .page-link:hover {
     border-color: #46A358;
     color: #46A358;
+}
+.page-link.next::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #3D3D3D;
+    border-right: 2px solid #3D3D3D;
+
+    
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+
+
+.page-link.next:hover {
+    background-color: #46A358;
+    border-color: #46A358;
+}
+
+.page-link.next:hover::after {
+    border-color: #FFFFFF;
+    
 }
 
 
