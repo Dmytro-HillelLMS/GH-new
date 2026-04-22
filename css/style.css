@@ -1404,6 +1404,678 @@ address{
 
 
 
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .container,
+    .container-shop,
+    .container-blog,
+    .container-footer {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 56px;
+        line-height: 60px;
+    }
+
+    .card {
+        width: calc(33.333% - 20px);
+    }
+
+    .recomend {
+        width: 100%;
+    }
+
+    .blog {
+        flex-direction: column;
+    }
+
+    .post {
+        width: calc(50% - 15px);
+    }
+
+    .posts {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+
+    
+    header .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        width: 100%;
+        order: 3;
+    }
+
+    nav>ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 10px 15px;
+    }
+
+    .logout {
+        width: auto;
+        justify-content: center;
+    }
+
+    
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-text {
+        width: 100%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 48px;
+        line-height: 52px;
+    }
+
+    .flove {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .flove img {
+        max-width: 80%;
+    }
+
+    
+    .container-shop {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .sidebar img {
+        max-width: 300px;
+        margin: 20px auto;
+    }
+
+    .shop {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .card {
+        width: calc(50% - 15px);
+    }
+
+    .catalog {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    
+    .recomend {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .recomend>img {
+        width: 200px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .rec {
+        text-align: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .rec h3 {
+        padding-left: 0;
+    }
+
+    .rec .btn {
+        align-self: center;
+    }
+
+    
+    .up-footer {
+        flex-wrap: wrap;
+    }
+
+    .info {
+        width: 33.333%;
+        flex: none;
+        margin-bottom: 20px;
+    }
+
+    .info::after {
+        display: none;
+    }
+
+    .join {
+        width: 100%;
+        flex: none;
+        margin: 20px 15px;
+        padding-left: 0;
+    }
+
+    .main-footer {
+        flex-direction: column;
+        text-align: center;
+        background: linear-gradient(to bottom, #EDF6EF, #52C368 80%);
+    }
+
+    .main-footer>img {
+        max-width: 150px;
+    }
+
+    .inform {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+    }
+
+    .guid {
+        width: 50%;
+        flex: none;
+        margin: 10px 0;
+        padding: 0 15px;
+    }
+
+    .guid:first-child {
+        margin-left: 0;
+    }
+
+    .social-pay {
+        width: 100%;
+        flex: none;
+        text-align: center;
+        margin: 20px 15px;
+    }
+
+    .social ul {
+        justify-content: center;
+    }
+
+    .pay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    
+    header {
+        margin: 15px 0;
+    }
+
+    nav>ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 8px 0;
+    }
+
+    .list {
+        position: static;
+        transform: none;
+        padding-top: 10px;
+        min-width: 100%;
+    }
+
+    .list2 {
+        position: static;
+        padding-left: 20px;
+    }
+
+    
+    h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .welcome {
+        font-size: 12px;
+    }
+
+    .bottom-text {
+        font-size: 13px;
+    }
+
+    .intro-text .btn {
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .shop-filter {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .shop-filter ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .shop-filter li {
+        margin: 5px 10px;
+    }
+
+    .pagination {
+        justify-content: center;
+    }
+
+    
+    .post {
+        width: 100%;
+    }
+
+    .posts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .posts-text h2 {
+        font-size: 24px;
+    }
+
+    
+    .info {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .icon-circle {
+        margin: 10px auto;
+    }
+
+    .guid {
+        width: 100%;
+        text-align: center;
+    }
+
+    .bottom-footer {
+        padding: 15px;
+    }
+}
+
+
+@media screen and (max-width: 540px) {
+
+    
+    h1 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .welcome {
+        font-size: 11px;
+    }
+
+    
+    .logout a {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .logout i {
+        font-size: 16px;
+    }
+
+    
+    .intro-text {
+        padding: 15px;
+    }
+
+    .flove img {
+        max-width: 100%;
+    }
+
+    
+    .sidebar h3 {
+        font-size: 16px;
+    }
+
+    .sidebar li {
+        font-size: 14px;
+        line-height: 35px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .card h4 {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    
+    .recomend>img {
+        width: 150px;
+    }
+
+    .rec h3 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .rec p {
+        font-size: 13px;
+    }
+
+    .post-text h3 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    
+    .up-footer {
+        padding: 15px 10px;
+    }
+
+    .joined {
+        flex-direction: column;
+    }
+
+    .join input {
+        border-radius: 6px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .join .btn {
+        border-radius: 6px;
+        width: 100%;
+    }
+
+    .inform {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    body {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .welcome {
+        font-size: 10px;
+    }
+
+    .bottom-text {
+        font-size: 11px;
+        line-height: 18px;
+    }
+
+    
+    header {
+        margin: 10px 0;
+    }
+
+    .logo img {
+        max-width: 120px;
+    }
+
+    nav li {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .logout a {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+
+    
+    .intro-text {
+        padding: 10px;
+    }
+
+    .intro-text .btn {
+        width: 100px;
+        height: 35px;
+        font-size: 11px;
+        margin-top: 20px;
+    }
+
+    
+    .shop-filter li {
+        font-size: 12px;
+    }
+
+    .card-icons a {
+        width: 30px;
+        height: 30px;
+        padding: 6px;
+    }
+
+    .card-icons i {
+        font-size: 16px;
+    }
+
+    .page-link,
+    .page-link-active {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    
+    .posts-text h2 {
+        font-size: 20px;
+    }
+
+    .rec h3 {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 0 12px;
+        font-size: 12px;
+        height: 35px;
+    }
+
+    
+    .info h3 {
+        font-size: 14px;
+    }
+
+    .icon-circle {
+        width: 50px;
+        height: 50px;
+    }
+
+    .social a {
+        width: 25px;
+        height: 25px;
+    }
+
+    .guid h3 {
+        font-size: 14px;
+    }
+
+    .end {
+        font-size: 11px;
+        text-align: center;
+        padding: 0 10px;
+    }
+}
+
+
+@media screen and (max-width: 280px) {
+    h1 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .welcome {
+        font-size: 9px;
+    }
+
+    .bottom-text {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    nav li {
+        font-size: 12px;
+    }
+
+    .logout a {
+        padding: 3px 6px;
+        font-size: 11px;
+    }
+
+    .card h4 {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+    .intro-text .btn {
+        width: 90px;
+        height: 32px;
+        font-size: 10px;
+    }
+
+    .sidebar li {
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    .shop-filter li {
+        font-size: 11px;
+        margin: 3px 5px;
+    }
+
+    .posts-text h2 {
+        font-size: 18px;
+    }
+
+    .post-text h3 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .post-text p {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .guid h3 {
+        font-size: 12px;
+    }
+
+    .guid li {
+        font-size: 11px;
+    }
+}
+
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .container {
+        flex-direction: row;
+    }
+
+    .intro-text {
+        width: 50%;
+    }
+
+    .flove {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+    .card:hover {
+        border-top: 2px solid #46A358;
+    }
+
+    .card:hover .card-icons {
+        opacity: 1;
+    }
+}
+
+
+@media (hover: none) {
+    .card-icons {
+        opacity: 1;
+    }
+}
+
+
+
+
 
 .registration{
     text-align: center;
