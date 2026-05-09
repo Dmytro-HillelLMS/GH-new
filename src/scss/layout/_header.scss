@@ -1,0 +1,240 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.header {
+  position: relative;
+    z-index: 15;
+    
+    width: 100%;
+    padding-top: 20px;
+    color: $color-white;
+  &--dark {
+    color: $color-white;
+  }
+
+  &__bar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    @media (min-width: $bp-tablet) {
+      gap: 14px;
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: .75rem;
+    color: rgba(255, 255, 255, 0.8);
+    flex-wrap: wrap;
+
+    @media (max-width: 767px) {
+      background: rgba(0, 0, 0, 0.2);
+      margin: -20px -16px 0;
+      padding: 10px 16px;
+      width: calc(100% + 32px);
+    }
+  }
+
+  &__langs {
+    display: flex;
+    gap: 2px;
+  }
+
+  &__lang {
+    padding: 5px 7px;
+    color: inherit;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: $radius-xs;
+    transition: background-color 0.2s, color 0.2s;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    &.is-active {
+      background-color: $color-accent;
+      color: $color-white;
+    }
+  }
+
+  &__meta {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+
+    @media (min-width: $bp-tablet) {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__phone-mobile {
+    display: block;
+    font-weight: 700;
+    color: $color-white;
+
+    @media (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $color-grey-text;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  &__logo {
+    width: 120px;
+
+    @media (min-width: $bp-tablet) {
+      width: 140px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    &--services {
+      width: 180px;
+
+      @media (min-width: $bp-tablet) {
+        width: 220px;
+      }
+    }
+  }
+
+  &__burger {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border-radius: $radius-sm;
+    cursor: pointer;
+    z-index: 101;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    span,
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 8px;
+      width: 20px;
+      height: 2px;
+      background: $color-white;
+      transition: transform 0.25s ease, top 0.25s ease, background-color 0.25s ease;
+    }
+
+    span {
+      top: 17px;
+    }
+
+    &::before {
+      top: 11px;
+    }
+
+    &::after {
+      top: 23px;
+    }
+
+    @media (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 16px;
+    left: 16px;
+    padding: 20px;
+    border-radius: 16px;
+    background: #323264;
+    display: none;
+    flex-direction: column;
+    gap: 14px;
+    box-shadow: $shadow-soft;
+    z-index: 100;
+
+    @media (min-width: $bp-tablet) {
+      position: static;
+      display: flex !important;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 18px;
+      padding: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+  }
+
+  &__link {
+    position: relative;
+    font-weight: 700;
+    color: inherit;
+    transition: color .2s ease;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 100%;
+      height: 2px;
+      background: $color-accent;
+      transform: scaleX(0);
+      transition: transform 0.2s ease;
+    }
+
+    &:hover {
+      color: $color-accent;
+
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  
+  &.is-open {
+    .header__nav {
+      display: flex;
+    }
+
+    .header__burger {
+      span {
+        background: transparent;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+        top: 17px;
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+        top: 17px;
+      }
+    }
+  }
+}

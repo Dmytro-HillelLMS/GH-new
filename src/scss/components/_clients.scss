@@ -1,0 +1,127 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.clients {
+  padding: clamp(3.75rem, 3.125rem + 3.125vw, 6.25rem) 0;
+  background: $color-white; 
+
+  &__title {
+    @include section-title;
+    text-align: center;
+    color: $color-blue; 
+    margin-bottom: clamp(2rem, 1.5rem + 2.5vw, 4rem);
+    text-transform: uppercase;
+    letter-spacing: .08em;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 0;
+    overflow: hidden;
+    border-radius: 12px; 
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr); 
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(4, 1fr); 
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-bottom: 75%; 
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    cursor: pointer;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: auto;
+      height: auto;
+      max-width: 80%;
+      max-height: 80%;
+      object-fit: contain;
+    }
+
+    &:hover {
+      opacity: 0.95;
+
+      img {
+        transform: translate(-50%, -50%) scale(1.05); // Легке збільшення лого при наведенні
+      }
+    }
+
+    
+
+   
+    &:nth-child(1) {
+      background-color: #1c4280;
+    }
+
+    
+    &:nth-child(2) {
+      background-color: #143646;
+    }
+
+    
+    &:nth-child(3) {
+      background-color: #f48b30;
+    }
+
+    
+    &:nth-child(4) {
+      background-color: #9e4dc3;
+    }
+
+    
+
+    
+    &:nth-child(5) {
+      background-color: #fd9339;
+    }
+
+    
+    &:nth-child(6) {
+      background-color: #e2e2e4;
+    }
+
+    
+    &:nth-child(7) {
+      background-color: #c71c36;
+    }
+
+    
+    &:nth-child(8) {
+      background-color: #dcf3f9;
+    }
+
+    
+
+    
+    &:nth-child(9) {
+      background-color: #eaeaea;
+    }
+
+    
+    &:nth-child(10) {
+      background-color: #282240;
+    }
+
+    
+    &:nth-child(11) {
+      background-color: #1d4568;
+    }
+
+    
+    &:nth-child(12) {
+      background-color: #000000;
+    }
+
+    
+  }
+}

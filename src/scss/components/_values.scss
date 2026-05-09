@@ -1,0 +1,75 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.values {
+  position: relative;
+  z-index: 2;
+  margin-top: 80px;
+  padding-bottom: 80px;
+  color: $color-white;
+
+  &__wrap {
+    display: grid;
+    gap: 32px;
+
+    @media (min-width: $bp-desktop) {
+      grid-template-columns: minmax(280px, 420px) minmax(0, 1fr);
+      align-items: center;
+      gap: 60px;
+    }
+  }
+
+  &__tabs {
+    display: grid;
+    gap: 14px;
+    position: relative;
+
+    @media (min-width: $bp-desktop) {
+      justify-items: end;
+      padding-right: 60px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 4px;
+        height: 100%;
+        border-radius: 4px;
+        background: rgba(255,255,255,.28);
+      }
+    }
+  }
+
+  &__tab {
+    font-size: clamp(2rem, 1.1rem + 2.3vw, 2.625rem);
+    line-height: 1.08;
+    font-weight: 700;
+    color: rgba(255,255,255,.35);
+    text-align: left;
+    transition: color .2s ease, transform .2s ease;
+
+    &:hover,
+    &.is-active {
+      color: $color-accent;
+      transform: translateX(4px);
+    }
+  }
+
+  &__content {
+    max-width: 860px;
+  }
+
+  &__heading {
+    font-size: clamp(1.875rem, 1.28rem + 1.5vw, 2.625rem);
+    line-height: 1.15;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    font-size: 1.1875rem;
+    line-height: 1.58;
+    color: rgba(255,255,255,.92);
+  }
+}

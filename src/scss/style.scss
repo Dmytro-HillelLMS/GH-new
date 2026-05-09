@@ -1,0 +1,17 @@
+@use './base/fonts';
+@use './base/reset';
+@use './base/variables';
+@use './base/mixins';
+@use './base/base';
+
+@use './layout/header';
+@use './layout/footer';
+
+@use './components/hero';
+@use './components/values';
+@use './components/services-grid';
+@use './components/clients';
+@use './components/publications';
+
+@use './pages/home';
+@use './pages/services';

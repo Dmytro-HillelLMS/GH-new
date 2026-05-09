@@ -1,739 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenShop</title>
-
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hlegal — Home</title>
+  <link rel="stylesheet" href="/src/scss/style.scss" />
 </head>
-<body>
-    <header>
-        <div class="container">
-            <strong class="logo">
-                <img src="image/Logo.png" alt="Logo">
-            </strong>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="" class="active">Home</a>
-                    </li>
-                    <li>
-                        <a href="" >Shop</a>
-                    </li>
-                    <li>
-                        <a href="" >Plant Care</a>
 
-                        <ul class="list">
-                            <li>
-                                <a href="">Drainage</a>
-
-                            </li>
-                            <li>
-                                <a href=""> Fungicides</a>
-
-                            </li>
-                            <li>
-                                <a href="">Fertilizer</a>
-
-                            </li>
-                            <li class="submenu" >
-                                <a href="">Priming</a>
-                                
-                                <ul class="list2">
-                                    <li>
-                                        <a href="">Universal</a>
-
-                                    </li>
-                                    <li>
-                                        <a href="">For Ficus</a>
-
-                                    </li>
-                                    <li>
-                                        <a href="">For Cacti</a>
-
-                                    </li>
-                                    <li>
-                                        <a href="">For Citrus</a>
-
-                                    </li>
-                                    <li>
-                                        <a href="">For those in bloom</a>
-
-                                    </li>
-                                    <li>
-                                        <a href="">For Orchids</a>
-                                    </li>
-
-                                </ul>
-
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="" >Blogs</a>
-                    </li>
-                </ul>
-            </nav>
-            
-            <div class="logout">
-                <a href="registration.html" class="btn">
-                    <i class="icon-logout"></i>
-                    Login</a>
-            </div>
-            
-            
+<body class="home-page">
+  <div class="page-shell home-shell">
+    <header class="header header--dark js-header">
+      <div class="container header__bar">
+        <div class="header__top">
+          <div class="header__langs">
+            <button class="header__lang">uk</button>
+            <button class="header__lang">ru</button>
+            <button class="header__lang is-active">en</button>
+          </div>
+          <div class="header__meta">
+            <span>Kyiv, Mechnikova str., 14/1</span>
+            <span class="header__dot"></span>
+            <a href="tel:0800211927">0800 211 927</a>
+            <span class="header__dot"></span>
+            <a href="#" aria-label="Facebook">
+              <img class="header__facebook" src="/src/assets/icons/facebook.svg" alt="Facebook" />
+            </a>
+          </div>
         </div>
-
-        
-        
-
+        <div class="header__bottom">
+          <a class="header__logo" href="./index.html">
+            <img src="/src/assets/icons/logo.svg" alt="Hlegal" />
+          </a>
+          <button class="header__burger js-burger" aria-label="Toggle menu">
+            <span></span>
+          </button>
+          <nav class="header__nav">
+            <a class="header__link is-active" href="./index.html">about us</a>
+            <a class="header__link" href="./services.html">services</a>
+            <a class="header__link" href="#experience">recommendations</a>
+            <a class="header__link" href="#publications">publications</a>
+            <a class="header__link" href="#contacts">contacts</a>
+          </nav>
+        </div>
+      </div>
     </header>
-    <main>
-        <div class="container">
-            <div class="intro-text">
-                <p class="welcome">Welcome to GreenShop</p>
-            
-                <h1>
-                    Let’s Make a <br> Better <span class="planet">Planet</span>
-                </h1>
-            
-                <p class="bottom-text">
-                    We are an online plant shop offering a wide range of cheap and trendy plants. Use <br> our plants to create an
-                    unique Urban
-                    Jungle. Order your favorite plants!
-                </p>
-            
-            
-                <a href="" class="btn">SHOP NOW</a>
-            
-            
-            
-            
-            </div>
-            
-            <img src="image/flove.png" alt="flove" class="flove">
+
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__symbol">
+          
         </div>
-        <div class="container-shop"> 
-            <aside class="sidebar">
-                <h3>
-                    Categories
-            
-                </h3>
-            
-                <ul >
-                    <li>
-                        <a href="" class="sidebar-active">House Plants</a>
-            
-                    </li>
-                    <li>
-                        <a href="">
-                            Potter Plants</a>
-            
-                    </li>
-                    <li>
-                        <a href="">
-            
-                            Seeds</a>
-            
-                    </li>
-                    <li>
-                        <a href="">
-                            Small Plants
-                        </a>
-            
-                    </li>
-                    <li>
-                        <a href="">
-                            Big Plants
-                        </a>
-            
-                    </li>
-                    <li>
-                        <a href="">
-                            Succulents
-                        </a>
-            
-                    </li>
-                    <li>
-                        <a href="">
-                            Trerrariums
-                        </a>
-            
-                    </li>
-                    <li>
-                        <a href="">
-                            Gardening
-                        </a>
-            
-                    </li>
-                    <li>
-                        <a href="">
-                            Accessories</a>
-            
-                    </li>
-                </ul>
-
-                <img src="image/super-sale-banner.png" alt="">
-            
-            </aside>
-            
-            <section class="shop">
-                <div class="shop-filter">
-                    <ul>
-                        <li>
-                            <a href="" class="active">All Plants</a>
-                        </li>
-                        <li>
-                            <a href="">New Arrivals</a>
-                        </li>
-                        <li>
-                            <a href="">Sale</a>
-                        </li>
-                    </ul>
-                    
-                    <p>Short by:Default sorting
-                        <i class="icon-ctrl"></i>
-                    </p>
-
-
-                </div>
-                <div class="catalog" >
-                    <div class="card">
-                        <div class="img-box">
-                            <span class="sale-badge">13% OFF</span>
-                        
-                            <img src="image/p1.png" alt="Barberton Daisy">
-                        
-                            <div class="card-icons">
-                                <a href=""><i class="icon-shopping-1-svg"></i></a>
-                                <a href=""><i class="icon-heart-1-svg"></i></a>
-                                <a href=""><i class="icon-search"></i></a>
-                            </div>
-                        </div>
-                        <h4>Barberton Daisy</h4>
-                        <span class="price">$119.00</span>
-
-                    </div>
-                    <div class="card">
-                        <div class="img-box">
-                            <span class="sale-badge">13% OFF</span>
-                        
-                            <img src="image/p2.png" alt="Angel Wing Begonia">
-                        
-                            <div class="card-icons">
-                                <a href=""><i class="icon-shopping-1-svg"></i></a>
-                                <a href=""><i class="icon-heart-1-svg"></i></a>
-                                <a href=""><i class="icon-search"></i></a>
-                            </div>
-                        </div>
-                        <h4>Angel Wing Begonia</h4>
-                        <span class="price">$169.00</span>
-                    
-                    </div>
-                    <div class="card">
-                        <div class="img-box">
-                            <span class="sale-badge">13% OFF</span>
-                        
-                            <img src="image/p3.png" alt="Angel Wing Begonia">
-                        
-                            <div class="card-icons">
-                                <a href=""><i class="icon-shopping-1-svg"></i></a>
-                                <a href=""><i class="icon-heart-1-svg"></i></a>
-                                <a href=""><i class="icon-search"></i></a>
-                            </div>
-                        </div>
-                        <h4>African Violet</h4>
-                        <span class="price">$199.00</span>
-                    
-                    </div>
-                    <div class="card">
-                        <div class="img-box">
-                            <span class="sale-badge">13% OFF</span>
-                        
-                            <img src="image/p4.png" alt="Angel Wing Begonia">
-                        
-                            <div class="card-icons">
-                                <a href=""><i class="icon-shopping-1-svg"></i></a>
-                                <a href=""><i class="icon-heart-1-svg"></i></a>
-                                <a href=""><i class="icon-search"></i></a>
-                            </div>
-                        </div>
-                        <h4>Beach Spider Lily</h4>
-                        <span class="price">$129.00</span>
-                    
-                    </div>
-                    <div class="card">
-                        <div class="img-box">
-                            <span class="sale-badge">13% OFF</span>
-                        
-                            <img src="image/p5.png" alt="Angel Wing Begonia">
-                        
-                            <div class="card-icons">
-                                <a href=""><i class="icon-shopping-1-svg"></i></a>
-                                <a href=""><i class="icon-heart-1-svg"></i></a>
-                                <a href=""><i class="icon-search"></i></a>
-                            </div>
-                        </div>
-                        <h4>Blushing Bromeliad</h4>
-                        <span class="price">$139.00</span>
-                    
-                    </div>
-                    <div class="card">
-                        <div class="img-box">
-                            <span class="sale-badge">13% OFF</span>
-                        
-                            <img src="image/p6.png" alt="Angel Wing Begonia">
-                        
-                            <div class="card-icons">
-                                <a href=""><i class="icon-shopping-1-svg"></i></a>
-                                <a href=""><i class="icon-heart-1-svg"></i></a>
-                                <a href=""><i class="icon-search"></i></a>
-                            </div>
-                        </div>
-                        <h4>Aluminum Plant</h4>
-                        <span class="price">$179.00</span>
-                    
-                    </div>
-                    <div class="card">
-                        <div class="img-box">
-                            <span class="sale-badge">13% OFF</span>
-                        
-                            <img src="image/p7.png" alt="Angel Wing Begonia">
-                        
-                            <div class="card-icons">
-                                <a href=""><i class="icon-shopping-1-svg"></i></a>
-                                <a href=""><i class="icon-heart-1-svg"></i></a>
-                                <a href=""><i class="icon-search"></i></a>
-                            </div>
-                        </div>
-                        <h4>Bird's Nest Fern</h4>
-                        <span class="price">$99.00</span>
-                    
-                    </div>
-                    <div class="card">
-                        <div class="img-box">
-                            <span class="sale-badge">13% OFF</span>
-                        
-                            <img src="image/p8.png" alt="Angel Wing Begonia">
-                        
-                            <div class="card-icons">
-                                <a href=""><i class="icon-shopping-1-svg"></i></a>
-                                <a href=""><i class="icon-heart-1-svg"></i></a>
-                                <a href=""><i class="icon-search"></i></a>
-                            </div>
-                        </div>
-                        <h4>Broadleaf Lady Palm</h4>
-                        <span class="price">$59.00</span>
-                    
-                    </div>
-                    <div class="card">
-                        <div class="img-box">
-                            <span class="sale-badge">13% OFF</span>
-                        
-                            <img src="image/p9.png" alt="Angel Wing Begonia">
-                        
-                            <div class="card-icons">
-                                <a href=""><i class="icon-shopping-1-svg"></i></a>
-                                <a href=""><i class="icon-heart-1-svg"></i></a>
-                                <a href=""><i class="icon-search"></i></a>
-                            </div>
-                        </div>
-                        <h4>Chinese Evergreen</h4>
-                        <span class="price">$39.00</span>
-                    
-                    </div>
-                
-                    
-
-                </div>
-                <div class="pagination">
-                    <a href="#" class="page-link-active">1</a>
-                    <a href="#" class="page-link">2</a>
-                    <a href="#" class="page-link">3</a>
-                    <a href="#" class="page-link">4</a>
-                    <a href="#" class="page-link next"></a>
-                </div>
-            
-            </section>
+        <h1 class="hero__title">you legal solutions provider</h1>
+        <a class="hero__scroll" href="#values">
+          <img src="/src/assets/icons/scroll.svg" alt="Scroll down" />
+        </a>
+      </div>
+    </section>
+    <section class="values" id="values">
+      <div class="container values__wrap">
+        <div class="values__tabs">
+          <button class="values__tab is-active" data-heading="Consistent"
+            data-text="We partner with startups, scaleups, and enterprise brands to build tech-driven legal strategies. Our approach is dynamic and tailored to the fast pace of modern business.">Consistent</button>
+          <button class="values__tab" data-heading="Customer oriented"
+            data-text="Your goals are our priority. We dive deep into your processes to provide solutions that make practical and financial sense. No complex legal jargon, only results.">Customer
+            oriented</button>
+          <button class="values__tab" data-heading="Innovative"
+            data-text="Technology is reshaping the world, and law must keep up. We utilize cutting-edge methodologies and tools to automate routine tasks and focus on strategic high-value advice.">Innovative</button>
+          <button class="values__tab" data-heading="Business minded"
+            data-text="We don't just assess legal risks; we seek opportunities. Our attorneys have strong business backgrounds, ensuring our counsel supports your commercial growth and scaling.">Business
+            minded</button>
         </div>
-        <div class="container-blog">
-            <div class="blog">
-                <div class="recomend">
-                    <img src="image/p5.png" alt="">
-                    <div class="rec">
-                
-                        <h3>
-                            Summer cactus
-                            & succulents
-                
-                        </h3>
-                        <p>
-                            We are an online plant shop offering a wide range of cheap and trendy plants
-                
-                        </p>
-                        <a href="" class="btn">
-                            Find More
-                            <i class="icon-arrow-right2"></i>
-                        </a>
-                
-                    </div>
-                
-                </div>
-                <div class="recomend">
-                    <img src="image/p3.png" alt="">
-                    <div class="rec">
-                        <h3>
-                            Styling Trends
-                            & much more
-                
-                        </h3>
-                        <p>
-                            We are an online plant shop offering a <a href="" class="text-link"> wide range of cheap and trendy plants</a>
-                
-                        </p>
-                        <a href="" class="btn">
-                            Find More
-                            <i class="icon-arrow-right2"></i>
-                
-                        </a>
-                
-                    </div>
-                </div>
-            </div>
-
-            <div class="blog-posts">
-                <div class="posts-text">
-                    <h2>
-                    Our Blog Posts
-                    </h2>
-                    <p>
-                    We are an online plant shop offering a wide range of cheap and trendy plants.
-                    </p>
-                </div>
-                <div class="posts">
-                    <div class="post">
-                        <img src="image/01.png" alt="">
-                        <div class="post-text">
-                            <time datetime="">September 12 I Read in 6 minutes</time>
-                            <h3>Cactus & Succulent <br> Care Tips</h3>
-                            <p>Cacti are succulents are easy care plants for any home or patio.</p>
-                            <a href="" class="readmore">
-                                Read More
-                                <i class="icon-arrow-right2"></i>
-                            </a>
-                        </div>
-                    </div>
-                
-                    <div class="post">
-                        <img src="image/02.png" alt="">
-                        <div class="post-text">
-                            <time datetime="">September 13 I Read in 2 minutes</time>
-                            <h3>Top 10 Succulents for <br> Your Home</h3>
-                            <p>Best in hanging baskets. Prefers medium to high light.</p>
-                            <a href="" class="readmore">
-                                Read More
-                                <i class="icon-arrow-right2"></i>
-                            </a>
-                        </div>
-                    </div>
-                
-                    <div class="post">
-                        <img src="image/03.png" alt="">
-                        <div class="post-text">
-                            <time datetime="">September 15 I Read in 3 minutes</time>
-                            <h3>Cacti & Succulent <br> Care Tips</h3>
-                            <p>Cacti and succulents thrive in containers and because most are..</p>
-                            <a href="" class="readmore special">
-                                Read More
-                                <i class="icon-arrow-right2"></i>
-                            </a>
-                        </div>
-                    </div>
-                
-                    <div class="post">
-                        <img src="image/04.png" alt="">
-                        <div class="post-text">
-                            <time datetime="">September 15 I Read in 2 minutes</time>
-                            <h3>Best Houseplants <br> Room by Room</h3>
-                            <p>
-                                <a href="" class="text-link">The benefits of houseplants are endless. In addition to..</a>
-                            </p>
-                            <a href="" class="readmore">
-                                Read More
-                                <i class="icon-arrow-right2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
+        <div class="values__content">
+          <h2 class="values__title js-values-title">Consistent</h2>
+          <p class="values__text js-values-text">We partner with startups, scaleups, and enterprise brands to build
+            tech-driven legal strategies. Our approach is dynamic and tailored to the fast pace of modern business.</p>
         </div>
-
-        
-        
-
-    </main>
-    <footer>
-        <div class="container-footer">
-            <div class="up-footer">
-                <div class="info ">
-                    <div class="icon-circle">
-                        <img src="image/Frame-4.png" alt="">
-
-                    </div>
-                   
-                    <h3>
-                        Garden Care
-                    </h3>
-                    <p>
-                        We are an online plant shop offering a wide range of cheap and trendy plants.
-
-                    </p>
-
-                </div>
-                
-                <div class="info ">
-                    <div class="icon-circle">
-                        <img src="image/Group-18.png" alt="">
-                    
-                    </div>
-                    <h3>
-                        Garden Care
-                    </h3>
-                    <p>
-                        We are an online plant shop offering a wide range of cheap and trendy plants.
-                
-                    </p>
-                
-                </div>
-                
-                <div class="info ">
-                    <div class="icon-circle">
-                        <img class="back" src="image/Picture3.png" alt="">
-                    
-                    </div>
-                    
-                    <h3>
-                        Garden Care
-                    </h3>
-                    <p>
-                        We are an online plant shop offering a wide range of cheap and trendy plants.
-                
-                    </p>
-                
-                </div>
-                <div class="join">
-                    <h3>
-                        Would you like to join newsletters?
-                    </h3>
-                    <p class="joined">
-                        <label for="el" class="lb">
-                            Email
-                            
-                        </label>
-                        <input id="el" placeholder="  Enter your email address" type="email">
-                        <a href="" class="btn">Join</a>
-                    </p>
-                    <label class="custom-checkbox">
-                        <input class="checking" type="checkbox" name="check">
-                        <div class="custom-check-icon"></div>
-                        Consent to save data
-                    </label>
-
-                    <p>
-                        We usually post offers and challenges in newsletter. We’re your online houseplant destination. We offer a wide range of
-                        houseplants and accessories shipped directly from our (green)house to yours!
-                    </p>
-
-
-                </div>
-
-
-
-            </div>
-            <div class="main-footer">
-                <img src="image/Logo.png" alt="" >
-
-                <div class="inform">
-                    <i class="icon-location"></i>
-                    <address>
-                        
-                        70 West Buckingham Ave.
-                        Farmingdale, NY 11735
-                    </address>
-                </div>
-
-                <div class="inform">
-
-                    <i class="icon-envelop"></i>
-                    <a>
-
-                    
-
-                        contact@greenshop.com
-                    </a>
-                </div>
-
-                <div class="inform">
-
-                    <i class="icon-phone"></i>
-                    <a>
-
-                    
-                        +88 01911 717 490
-                    </a>
-                </div>
-
-            </div>
-            <div class="bottom-footer">
-                <div class="menu">
-                    <div class="guid">
-                        <h3>
-                            My Account
-
-                        </h3>
-                        <ul>
-                            <li>
-                                <a href="">My Account</a>
-                                
-
-                            </li>
-                            <li>
-                            <a href="">Our stores</a>
-                            </li>
-                            <li>
-                            
-                            <a href="">Contact us</a>
-                            
-                            </li>
-                            <li>
-                            
-                            <a href="">Career</a>
-                            
-                            </li>
-                            <li>
-                           
-                            <a href="">Specials</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div class="guid">
-                        <h3>
-                            Help & Guide
-                        </h3>
-                        <ul>
-                            <li>
-                                <a href="">Help Center</a>
-                        
-                            </li>
-                            <li>
-                                <a href="">How to Buy</a>
-                            </li>
-                            <li>
-                        
-                                <a href="">Shipping & Delivery</a>
-                        
-                            </li>
-                            <li>
-                        
-                                <a href="">Product Policy</a>
-                        
-                            </li>
-                            <li>
-                        
-                                <a href="">How to Return</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div class="guid">
-                        <h3>
-                            Categories
-                        </h3>
-                        <ul>
-                            <li>
-                                <a href="">House Plants</a>
-                        
-                            </li>
-                            <li>
-                                <a href="">Potter Plants</a>
-                            </li>
-                            <li>
-                        
-                                <a href="">Seeds</a>
-                        
-                            </li>
-                            <li>
-                        
-                                <a href="">Small Plants</a>
-                        
-                            </li>
-                            <li>
-                        
-                                <a href="">Accessories</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div class="social-pay">
-                        <div class="social">
-                            <h3>
-                                Social Media
-                            </h3>
-                            <ul>
-                                <li><a href=""><i class="icon-facebook-svg"></i></a></li>
-                                <li><a href=""><i class="icon-instagram-svg"></i></a></li>
-                                <li><a href=""><i class="icon-twitter-svg"></i></a></li>
-                                <li><a href=""><i class="icon-linkedin2-svg"></i></a></li>
-                                <li><a href=""><i class="icon-youtube-svg"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="pay">
-                            <h3>
-                                We accept
-                            </h3>
-                            <img src="image/pay.png" alt="">
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-        <p class="end">
-            © 2021 GreenShop. All Rights Reserved.
-        </p>
-    </footer>
+      </div>
+    </section>
+    <section class="services-preview" id="services">
+      <div class="container">
     
-    <div class="preloader">
-        <div class="plant-container">
-            <div class="leaf left"></div>
-            <div class="leaf right"></div>
-            <div class="stem"></div>
-            <div class="pot"></div>
+        <div class="services-preview__top">
+          <a class="section-label" href="./services.html">Services</a>
+          <h2 class="section-heading">What we can do best</h2>
         </div>
+    
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-card__icon">
+              <img src="/src/assets/icons/icon-1.svg" alt="IT and e-commerce" />
+            </div>
+            <h3 class="service-card__title">IT and e-commerce</h3>
+            <p class="service-card__text">An endless stream of contracts, tax issues, labor relations, corporate papers —
+              legal work distracts you from doing business.</p>
+          </article>
+    
+          <article class="service-card">
+            <div class="service-card__icon">
+              <img src="/src/assets/icons/icon-2.svg" alt="Comprehensive daily legal support" />
+            </div>
+            <h3 class="service-card__title">Comprehensive daily legal support</h3>
+            <p class="service-card__text">In addition, over time, the work will become the same type and uninteresting for a
+              full-time lawyer. We know how to help.</p>
+          </article>
+    
+          <article class="service-card">
+            <div class="service-card__icon">
+              <img src="/src/assets/icons/icon-3.svg" alt="Structuring corporate relationships" />
+            </div>
+            <h3 class="service-card__title">Structuring corporate relationships</h3>
+            <p class="service-card__text">Instead of just providing legal services, we become part of daily life in your
+              company. We help structure internal relations.</p>
+          </article>
+    
+          <article class="service-card">
+            <div class="service-card__icon">
+              <img src="/src/assets/icons/icon-4.svg" alt="Building contractual relations" />
+            </div>
+            <h3 class="service-card__title">Building contractual relations</h3>
+            <p class="service-card__text">Once a week, or week after month, you have your own lawyer by your side. Anyone in
+              the company can catch them at the coffee maker.</p>
+          </article>
+    
+          <article class="service-card">
+            <div class="service-card__icon">
+              <img src="/src/assets/icons/icon-5.svg" alt="Protection of business, intellectual property" />
+            </div>
+            <h3 class="service-card__title">Protection of business, intellectual property</h3>
+            <p class="service-card__text">And all the other time they will work on new diverse projects, so they will
+              definitely not stop in professional development.</p>
+          </article>
+    
+          <article class="service-card">
+            <div class="service-card__icon">
+              <img src="/src/assets/icons/icon-6.svg" alt="Judicial representation" />
+            </div>
+            <h3 class="service-card__title">Judicial representation</h3>
+            <p class="service-card__text">Is it a small, medium-sized company or a market leader? Local business or
+              multinational company? We protect your interests in court.</p>
+          </article>
+        </div>
+    
+      </div>
+    </section>
+  </div>
+  
+  <main>
+    
+
+    
+
+    <section class="clients" id="experience">
+      <div class="container">
+        <h2 class="clients__title">They already trust us</h2>
+    
+        <div class="clients__grid">
+          <div class="clients__item"><img src="/src/assets/images/clients/1.png" alt="Hillel" /></div>
+          <div class="clients__item"><img src="/src/assets/images/clients/2.png" alt="WannaBiz" /></div>
+          <div class="clients__item"><img src="/src/assets/images/clients/3.png" alt="Tapgerine" /></div>
+          <div class="clients__item"><img src="/src/assets/images/clients/4.png" alt="3D Look" /></div>
+          <div class="clients__item"><img src="/src/assets/images/clients/5.png" alt="Orangear" /></div>
+          <div class="clients__item"><img src="/src/assets/images/clients/6.png" alt="Adtelligent" /></div>
+          <div class="clients__item"><img src="/src/assets/images/clients/7.png" alt="Clickky" /></div>
+          <div class="clients__item"><img src="/src/assets/images/clients/8.png" alt="Eco Leasing" /></div>
+          <div class="clients__item"><img src="/src/assets/images/clients/9.png" alt="InfraTek" /></div>
+          <div class="clients__item"><img src="/src/assets/images/clients/10.png" alt="City Park" /></div>
+          <div class="clients__item"><img src="/src/assets/images/clients/11.png" alt="Art Print Studio" /></div>
+          <div class="clients__item"><img src="/src/assets/images/clients/12.png" alt="Ultimate Card" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="publications" id="publications">
+      <div class="container">
+        <div class="publications__top">
+          <span class="section-label">Publications</span>
+          <h2 class="section-heading">We have something to say</h2>
+        </div>
+        <div class="publications__grid">
+          <article class="article-card">
+            <div class="article-card__image"><img src="/src/assets/images/publications/Publication-1.png" alt="Equity associate" />
+            </div>
+            <div class="article-card__body">
+              <h3 class="article-card__title">Equity associate</h3>
+              <p class="article-card__date">April 22</p>
+              <p class="article-card__text">I'm a partner. And I am tired of this. Our senior partner has just left our
+                company. We need to restructure.</p>
+            </div>
+          </article>
+          <article class="article-card">
+            <div class="article-card__image"><img src="/src/assets/images/publications/Publication-2.png" alt="GDPR compliance" />
+            </div>
+            <div class="article-card__body">
+              <h3 class="article-card__title">GDPR compliance</h3>
+              <p class="article-card__date">May 28</p>
+              <p class="article-card__text">How startups can ensure they respect privacy and secure customer data from
+                day one under European laws.</p>
+            </div>
+          </article>
+          <article class="article-card">
+            <div class="article-card__image"><img src="/src/assets/images/publications/Publication-3.png"
+                alt="Millennial Testament" /></div>
+            <div class="article-card__body">
+              <h3 class="article-card__title">Millennial Testament</h3>
+              <p class="article-card__date">August 19</p>
+              <p class="article-card__text">What and how modern vloggers, opinion leaders and crypto-millionaires will
+                inherit in a world where digital assets matter.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container footer__inner">
+      <div class="footer__contacts">
+        <div class="footer__line">
+          <span>Kyiv, Mechnikova str., 14/1</span>
+          <span class="header__dot" style="background:#b3b3ba"></span>
+          <a class="footer__map" href="#">On map</a>
+        </div>
+        <div class="footer__line">
+          <a href="#" aria-label="Facebook">
+            <img class="footer__facebook" src="/src/assets/icons/facebook.svg" alt="Facebook" />
+          </a>
+          <span class="header__dot" style="background:#b3b3ba"></span>
+          <a class="footer__phone" href="tel:0800211927">0800 211 927</a>
+          <span class="header__dot" style="background:#b3b3ba"></span>
+          <a class="footer__mail" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+        </div>
+      </div>
+      <p class="footer__copy">© 2021 HLEGAL Law Company, LLC</p>
     </div>
-    <script>
-        window.addEventListener('load', function () {
-            
-            const loader = document.querySelector('.preloader');
+  </footer>
 
-            
-            setTimeout(() => {
-                loader.style.opacity = '0'; 
-
-                
-                setTimeout(() => {
-                    loader.style.display = 'none';
-                }, 500);
-            }, 5500); 
-        });
-    </script>
-
+  <script type="module" src="/src/js/main.js"></script>
 </body>
+
 </html>

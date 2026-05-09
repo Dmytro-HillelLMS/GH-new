@@ -1,0 +1,83 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+body {
+  font-family: 'TT Norms', Arial, sans-serif;
+  background: $color-white;
+ 
+  color: $color-black;
+  line-height: 1.45;
+}
+
+main {
+  overflow: clip;
+}
+
+.container {
+  @include container;
+}
+
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: .875rem;
+  line-height: 1.2;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $color-blue;
+
+  &::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(45deg);
+  }
+}
+
+.section-heading {
+  @include section-title;
+  @include gradient-text;
+}
+
+.text-muted {
+  color: $color-grey-text;
+}
+
+
+.page-shell {
+  background: $gradient-hero;
+  
+  border-bottom-left-radius: $radius-xl;
+  border-bottom-right-radius: $radius-xl;
+  position: relative;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 0 0 12px 12px;
+    pointer-events: none;
+  }
+
+  &::before {
+    bottom: -10px;
+    z-index: -1;
+  }
+
+  &::after {
+    bottom: -20px;
+    left: 40px;
+    right: 40px;
+    z-index: -2;
+    opacity: 0.3;
+  }
+}

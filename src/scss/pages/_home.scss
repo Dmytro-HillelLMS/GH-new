@@ -1,0 +1,19 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.home-page {
+  .home-shell {
+    background: $gradient-hero;
+  }
+
+  .services-preview {
+    padding: 64px 0 80px;
+    color: $color-white;
+
+    &__top {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 56px;
+    }
+  }
+}
